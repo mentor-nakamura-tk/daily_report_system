@@ -39,6 +39,7 @@ public class LoginFilter implements Filter {
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
 	 */
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+	    // TODO: 管理者ユーザを作成し忘れたら一番下の行以外をコメントアウトして、「http://localhost:8080/daily_report_system//employees/index」から登録する
         String context_path = ((HttpServletRequest)request).getContextPath();
         String servlet_path = ((HttpServletRequest)request).getServletPath();
 
